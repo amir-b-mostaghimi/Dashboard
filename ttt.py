@@ -6,9 +6,9 @@ import py3Dmol
 from stmol import showmol
 
 # Load the dataframes
-all_pairs_df = pd.read_csv('/Users/amir/Dropbox/Set_up/REE_pairs.csv')
+all_pairs_df = pd.read_csv('./REE_pairs.csv')
 
-df = pd.read_csv('/Users/amir/Dropbox/Set_up/REE_D.csv')
+df = pd.read_csv('./REE_D.csv')
 
 def find_reference(df, target_smiles):
     target_idx = df[df['SMILES'] == target_smiles].index[0]
